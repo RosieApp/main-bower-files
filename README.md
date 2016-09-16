@@ -78,11 +78,11 @@ Once that's done, add this line to your project's Gruntfile:
 grunt.loadNpmTasks('main-bower-files');
 ```
 
-In your project's Gruntfile, add a section named `bower` to the data object passed into `grunt.initConfig()`, like so:
+In your project's Gruntfile, add a section named `bowerFiles` to the data object passed into `grunt.initConfig()`, like so:
 
 ```javascript
 grunt.initConfig({
-    bower: {
+    bowerFiles: {
         dev: {
             base: 'bower_components', /* the path to the bower_components directory */
             dest: 'web/bower_components',
@@ -313,7 +313,7 @@ a copy of this software and associated documentation files (the
 "Software"), to deal in the Software without restriction, including
 without limitation the rights to use, copy, modify, merge, publish,
 distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
+permit persons to whom the Software is gfurnished to do so, subject to
 the following conditions:
 
 The above copyright notice and this permission notice shall be
