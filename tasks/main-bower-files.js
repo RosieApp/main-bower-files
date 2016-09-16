@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     var mainBowerFiles = require('..');
     var vfs = require('vinyl-fs');
 
-    grunt.registerMultiTask('bower', 'Copy Bower packages to the destination folder.', function() {
+    grunt.registerMultiTask('bowerFiles', 'Copy Bower packages to the destination folder.', function() {
         var done = this.async();
         var options = this.options() || {};
         var targets = (this.file) ? [this.file] : this.files;
